@@ -22,10 +22,11 @@ export default function Home() {
       <AboutUs/>
       <BannerSection />
       <Reviews />
+      <TelegramChatWidget />
       <ContactSection />
       <Newsletter />
       <Footer />
-      <TelegramChatWidget />
+      
     </div>
   );
 }
