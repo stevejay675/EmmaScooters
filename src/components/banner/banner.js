@@ -40,7 +40,7 @@ const Banner = () => {
         </motion.p>
 
         {/* Call to Action Button */}
-        <motion.a
+        <motion.span
           href="#about"
           className="banner-btn"
           initial={{ scale: 0.8, opacity: 0 }}
@@ -48,7 +48,7 @@ const Banner = () => {
           transition={{ delay: 1, duration: 0.8 }}
         >
          <Link href='/Order'> Order Now</Link>
-        </motion.a>
+        </motion.span>
       </div>
     </div>
   );
