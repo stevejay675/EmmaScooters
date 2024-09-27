@@ -17,7 +17,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           <FaTimes />
         </div>
         <div className="sidebar-content">
-          <Link href='/'>Home</Link>
+          <Link href='/' onClick={toggleSidebar}>Home</Link>
           <a href="#about" onClick={toggleSidebar}>About</a>
           <a href="#services" onClick={toggleSidebar}>Services</a>
           <a href="#contact" onClick={toggleSidebar}>Contact</a>

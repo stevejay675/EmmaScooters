@@ -24,7 +24,7 @@ const ContactSection = () => {
         </div>
 
         <div className="map" data-aos="fade-up">
-          <img src="/images/map.png" alt="Map" />
+          <img src="/images/map2.jpg" alt="Map" />
         </div>
       </div>
     </section>

@@ -3,9 +3,13 @@ import React from 'react';
 import Image from 'next/image';
 import './order.css'; // Import the global CSS file
 import TelegramChatWidget from '@/components/widget/TelegramChatWidget';
+import Newsletter from '@/components/newsletter/newsletter';
+import Footer from '@/components/footer/Footer';
 
 const Order = () => {
   return (
+
+    <>
     <div className="order-container">
       <section className="order-section">
         <h1>How to Order</h1>
@@ -62,12 +66,18 @@ const Order = () => {
         <p>We accept a wide range of payment methods for your convenience:</p>
         <div className="payment-methods">
           <Image src="/images/paypal.png" alt="PayPal" width={60} height={60} />
-          <Image src="/images/btc.png" alt="Bitcoin" width={60} height={60} />
-          <Image src="/images/cashapp.png" alt="Bank Transfer" width={60} height={60} />
-          <p>...and more</p>
+          <Image src="/images/bank.jpg" alt="Bitcoin" width={60} height={60} />
+          <Image src="/images/btc.png" alt="Bank Transfer" width={60} height={60} />
         </div>
       </section>
+
+      
     </div>
+
+    <TelegramChatWidget />
+      <Newsletter />
+      <Footer />
+    </>
   );
 };
 

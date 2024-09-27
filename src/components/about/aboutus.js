@@ -30,6 +30,7 @@ const AboutUs = () => {
           ensuring that no matter where you are, your product arrives quickly
            and securely. Our global reach combined with fast, reliable delivery 
            makes sure you never have to wait long to regain your independence.
+           delivery available for individuals based in: USA, UK(ENGLAND, LONDON, SCOTLAND), AUSTRALIA.
           </p>
           <p>
             With years of expertise in providing mobility solutions, we ensure
