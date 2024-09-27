@@ -25,6 +25,7 @@ export default function Home() {
       <ContactSection />
       <Newsletter />
       <Footer />
+      <TelegramChatWidget />
     </div>
   );
 }

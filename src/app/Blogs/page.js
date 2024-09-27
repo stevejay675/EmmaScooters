@@ -151,6 +151,7 @@ const BlogPage = () => {
       <TelegramChatWidget />
       <Newsletter />
       <Footer />
+      <TelegramChatWidget />
     </div>
     
   );
