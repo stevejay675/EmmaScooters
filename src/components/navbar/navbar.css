@@ -1,0 +1,81 @@
+/* src/components/navbar/navbar.css */
+.navbar {
+  width: 100%;
+  background-color: #fff; /* Using variable */
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 80px;
+  color: var(--primary);
+  box-shadow:  0 0 10px rgba(0, 0, 0, .3);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo styling */
+.navbar-logo h1 {
+ /* White for logo */
+  font-size: 24px;
+}
+
+.right-links{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.right-links .order-now{
+  padding: 6px 10px;
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.right-ham{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Navbar links for Desktop */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-links a:hover {
+  border-bottom: 2px solid var(--text-color); /* Hover effect with white */
+}
+
+/* Hamburger menu (hidden on desktop) */
+.navbar-hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide navbar links */
+  }
+  .navbar-hamburger {
+    display: block; /* Show hamburger menu */
+  }
+}

@@ -1,0 +1,76 @@
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--accent-color);
+  padding: 40px 80px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.newsletter .news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter div h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 0.7px;
+  font-size: 1.4rem;
+}
+
+.newsletter div small {
+  color: #fff;
+}
+
+.newsletter div small b{
+  color: var(--darker);
+  cursor: pointer;
+}
+
+
+
+.textArea {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 40px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.textArea button {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: transparent;
+  height: 100%;
+
+}
+
+.newsletter div input {
+  width: 90%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    
+  }
+
+  .newsletter .textArea{
+    width: 100%;
+  }
+}

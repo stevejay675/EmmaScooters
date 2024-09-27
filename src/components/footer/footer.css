@@ -1,0 +1,164 @@
+.footer {
+  background-color: var(--primary);
+  color: #ccc;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0;
+  margin-right: 0;
+}
+
+/* Top Features Section */
+.footer-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #444;
+  padding: 20px 0;
+
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.feature-icon {
+  font-size: 40px;
+  color: #F39C12;
+}
+
+.feature-item div{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.feature-item h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 14px;
+  margin: 0;
+  color: grey;
+}
+
+/* Footer Links Section */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #444;
+  padding: 20px 0;
+}
+
+
+
+.link-group h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.link-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.link-group ul li {
+  margin-bottom: 10px;
+}
+
+.link-group ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link-group ul li a:hover {
+  text-decoration: underline;
+  color: #F39C12;
+}
+
+/* Payment and Social Section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.payment-section h4, .social-section h4{
+  margin-bottom: 20px;
+}
+
+.payment-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s;
+}
+
+.social-icons a:hover {
+  color: #F39C12;
+}
+
+
+
+/* Disclaimer */
+.footer-disclaimer {
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.footer-disclaimer p{
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-features,
+  .footer-links,
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item,
+  .link-group,
+  .payment-section,
+  .social-section {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

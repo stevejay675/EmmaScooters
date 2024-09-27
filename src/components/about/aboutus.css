@@ -1,0 +1,73 @@
+/* src/components/about/aboutus.css */
+.about-us {
+    padding: 60px 20px;
+    background-color: var(--color-bg); /* Background from global color variables */
+  }
+  
+  .about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .about-us-image {
+    flex: 1;
+  }
+  
+  .about-image {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+
+  .about-image img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .about-us-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .about-us-content h2 {
+    font-size: 36px;
+    color: var(--color-primary); /* Primary color variable */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about-us-content p {
+    font-size: 18px;
+    color: var(--color-text); /* Text color variable */
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-us-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-us-image {
+      margin-bottom: 30px;
+    }
+
+    .about-us-image img{
+      height: 300px;
+    }
+  
+    .about-us-content h2 {
+      font-size: 28px;
+    }
+  
+    .about-us-content p {
+      font-size: 16px;
+    }
+  }
+  

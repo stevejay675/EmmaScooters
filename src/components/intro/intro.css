@@ -1,0 +1,66 @@
+/* src/components/intro/intro.css */
+
+.intro {
+  padding: 60px 20px;
+  background-color: var(--color-bg);
+}
+
+.intro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-title h2 {
+  font-size: 36px;
+  color: var(--color-primary);
+  margin-bottom: 40px;
+}
+
+.intro-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.intro-card {
+  background-color: var(--color-card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  margin: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.intro-card:hover {
+  transform: translateY(-10px);
+}
+
+.intro-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.intro-card-title {
+  font-size: 24px;
+  color: var(--color-secondary);
+  margin-bottom: 10px;
+}
+
+.intro-card-description {
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .intro-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

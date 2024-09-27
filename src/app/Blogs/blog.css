@@ -1,0 +1,131 @@
+/* Blog Page General Styles */
+.blog-page {
+    background-color: #f9f9f9;
+    font-family: "Poppins", sans-serif;
+    padding-top: 20px;
+  }
+  
+  /* Blog Header */
+  .blog-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .blog-header h1 {
+    font-size: 36px;
+    color: var(--brighter);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .blog-header p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Blog Container */
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px 50px 20px;
+  }
+  
+  /* Blog Card */
+  .blog-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .blog-content h2 {
+    font-size: 22px;
+    color: var(--brighter);
+    margin-bottom: 10px;
+  }
+  
+  .blog-meta {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .blog-meta span {
+    margin-left: 5px;
+  }
+  
+  .blog-content p {
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Popup Overlay */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Popup Content */
+  .popup {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .full-text {
+    color: #555;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
