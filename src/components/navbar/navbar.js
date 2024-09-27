@@ -36,7 +36,7 @@ const Navbar = () => {
           
           <div className="right-ham">
              {/* Hamburger menu for Mobile */}
-          <a className="order-now">Order Now</a>
+          <Link href='/Order' className="order-now">Order Now</Link>
           <div className="navbar-hamburger" onClick={toggleSidebar}>
             <FaBars />
           </div>

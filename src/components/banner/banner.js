@@ -4,6 +4,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./banner.css";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -46,7 +47,7 @@ const Banner = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          Order Now
+         <Link href='/Order'> Order Now</Link>
         </motion.a>
       </div>
     </div>
