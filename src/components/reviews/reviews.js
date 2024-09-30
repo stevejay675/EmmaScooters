@@ -17,56 +17,56 @@ const reviews = [
   },
   {
     name: "Jane Smith",
-    image: "/images/p3.jpeg",
+    image: "/images/prs3.jpg",
     rating: 4,
     review:
       "The electric wheelchair I purchased is top-notch. I couldn't be happier with my purchase.",
   },
   {
     name: "Alice Brown",
-    image: "/images/p2.jpg",
+    image: "/images/prs2.jpeg",
     rating: 5,
     review:
       "Fantastic customer support and great products! I would highly recommend them to anyone.",
   },
   {
     name: "Michael Johnson",
-    image: "/images/p4.jpeg",
+    image: "/images/prs4.jpg",
     rating: 5,
     review:
       "The best purchase I've ever made. The mobility scooter works perfectly, and the support team is amazing.",
   },
   {
-    name: "Laura Davis",
-    image: "/images/p5.jpeg",
+    name: "Dean Davis",
+    image: "/images/prs5.jpg",
     rating: 4,
     review:
       "I love my new electric wheelchair! It's so easy to use and has improved my daily life significantly.",
   },
   {
     name: "Emily Wilson",
-    image: "/images/p6.jpeg",
+    image: "/images/prs6.jpg",
     rating: 5,
     review:
       "Incredible service and high-quality scooters. I'm beyond satisfied with the entire experience.",
   },
   {
     name: "Sarah Taylor",
-    image: "/images/p7.jpeg",
+    image: "/images/prs7.jpg",
     rating: 4,
     review:
       "My mobility scooter has been a game-changer. Great product and the team was very helpful.",
   },
   {
     name: "David Miller",
-    image: "/images/p8.jpeg",
+    image: "/images/prs9.webp",
     rating: 5,
     review:
       "The support I received was outstanding. They really care about their customers and their needs.",
   },
   {
     name: "Emily White",
-    image: "/images/p9.jpeg",
+    image: "/images/prs8.jpg",
     rating: 5,
     review:
       "I'm very impressed with both the product quality and the customer service. Definitely recommend this shop.",

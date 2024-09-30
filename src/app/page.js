@@ -11,6 +11,7 @@ import Newsletter from "@/components/newsletter/newsletter";
 import Footer from "@/components/footer/Footer";
 import ContactSection from "@/components/contact/contact";
 import ImageGallery from "@/components/gallery/gallery";
+import FAQSection from "@/components/FAQ/FAQSection ";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Services />
       <AboutUs/>
       <ImageGallery />
+      <FAQSection />
       <BannerSection />
       <Reviews />
       <TelegramChatWidget />

@@ -26,6 +26,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -33,6 +34,7 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  transition: .4s;
 }
 
 a {
@@ -40,6 +42,59 @@ a {
   text-decoration: none;
 }
 
+
+.not-found-page{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.not-found-page a{
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+
+.loading{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading h3{
+  font-size: 20px;
+  color: var(--primary);
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  color: var(--accent-color);
+  --_c:no-repeat radial-gradient(farthest-side,currentColor 92%,#0000);
+  background: 
+    var(--_c) 50% 0   /12px 12px,
+    var(--_c) 50% 100%/12px 12px,
+    var(--_c) 100% 50%/12px 12px,
+    var(--_c) 0    50%/12px 12px,
+    var(--_c) 50%  50%/12px 12px,
+    conic-gradient(from 90deg at 4px 4px,#0000 90deg,currentColor 0)
+    -4px -4px/calc(50% + 2px) calc(50% + 2px);
+  animation: l8 1s infinite linear;
+}
+@keyframes l8 {to{transform: rotate(.5turn)}}
 
 
 /*blog*/

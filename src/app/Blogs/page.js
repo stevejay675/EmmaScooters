@@ -77,7 +77,7 @@ const blogs = [
     description: "Find out if folding mobility scooters are the right choice for your mobility needs.",
     fullText:
       "Folding mobility scooters are designed for convenience and portability. They are ideal for users who need a compact solution that can be easily transported. However, they may not have the same power or battery life as full-sized models, so it's important to assess your needs before purchasing one.",
-    views: "750",
+    views: "2k",
   },
   {
     id: 7,
@@ -111,7 +111,7 @@ const BlogPage = () => {
     <div className="blog-page">
       <Navbar />
       <header className="blog-header">
-        <h1 data-aos="fade-down">Mobility and Accessibility Blog</h1>
+        <h1 data-aos="fade-down">Our Latest Blogs</h1>
         <p data-aos="fade-up">Your resource for mobility scooters, electric wheelchairs, and more.</p>
       </header>
 
@@ -151,8 +151,7 @@ const BlogPage = () => {
       <TelegramChatWidget />
       <Newsletter />
       <Footer />
-      <TelegramChatWidget />
-    </div>
+     </div>
     
   );
 };

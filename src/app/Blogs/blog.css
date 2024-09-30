@@ -3,6 +3,7 @@
     background-color: #f9f9f9;
     font-family: "Poppins", sans-serif;
     padding-top: 20px;
+    margin-top: 100px;
   }
   
   /* Blog Header */
@@ -12,7 +13,7 @@
   }
   
   .blog-header h1 {
-    font-size: 36px;
+    font-size: 2rem;
     color: var(--brighter);
     font-weight: 700;
     margin-bottom: 10px;

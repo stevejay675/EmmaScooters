@@ -1,0 +1,99 @@
+/* faq.css */
+
+.faq-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .faq-container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .faq-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2C3E50;
+    font-weight: 600;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .faq-question {
+    font-size: 1.2rem;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .faq-icon {
+    font-size: 1.5rem;
+    color: #2C3E50;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  
+  .faq-answer.show {
+    max-height: 200px;
+    padding: 0 15px 15px;
+    color: #4B515D;
+  }
+  
+  .faq-answer p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .faq-question.active {
+    color: #2C3E50;
+  }
+  
+  .faq-question.active .faq-icon {
+    transform: rotate(180deg);
+  }
+  
+
+  /* faq.css */
+
+/* Add this to your existing CSS for better responsiveness */
+@media (max-width: 768px) {
+    .faq-container {
+      padding: 20px;
+      max-width: 100%;
+    }
+  
+    .faq-question {
+      font-size: 1rem;
+    }
+  
+    .faq-answer p {
+      font-size: 0.9rem;
+    }
+  
+    .faq-title {
+      font-size: 1.5rem;
+    }
+  }
+  

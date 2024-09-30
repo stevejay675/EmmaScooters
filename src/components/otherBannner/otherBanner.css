@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 20px;
   }
   
   .overlay-blur {
@@ -30,12 +31,12 @@
   }
   
   .content h1 {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
   }
   
   .content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     color: #fff;
   }
@@ -43,15 +44,17 @@
   .action-btn {
     padding: 1rem 2rem;
     font-size: 1rem;
-    background-color: var(--normal);
+    background-color: var(--accent-color);
     color: white;
     border: 1px solid transparent;
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 30px;
+    border: 1px solid  transparent;
   }
   
   .action-btn:hover {
-    background-color: var(--darker);
+    border: 1px solid  #fff;
+    background-color: transparent;
   }
   
