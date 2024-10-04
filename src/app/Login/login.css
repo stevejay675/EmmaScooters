@@ -1,0 +1,221 @@
+.register{
+    display: flex;
+}
+
+.register section{
+    width: 60%;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.register section p{
+    text-align: center;
+    width: 70%;
+    color: white;
+    font-size: 18px;
+}
+
+.register .login-signup{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register .login-signup .login{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 60px;
+    width: 100%;
+}
+
+.register .login-signup .login.hidelogin{
+    display: none;
+}
+
+.register .login-signup .login h1{
+    text-align: center;
+    font-size: 25px;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.register  .login-signup .login .input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.register .login-signup .login .input input{
+    background: transparent;
+    border: transparent;
+    outline: none;
+    width: 90%;
+   
+}
+
+.register  .login-signup .login button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+
+.register  .login-signup .login span a{
+   color: var(--primary);
+   cursor: pointer;
+   font-size: 18px;
+   font-weight: 700;
+   cursor: pointer;
+   
+}
+
+
+.register .login-signup .signup{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 60px;
+    width: 100%;
+    display: none;
+}
+
+.register .login-signup .signup.showsignup{
+    display: flex;
+}
+
+.register .login-signup .signup h1{
+    text-align: center;
+    font-size: 20px;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.register  .login-signup .signup .input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--primary);
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.register .login-signup .signup .input input{
+    background: transparent;
+    border: transparent;
+    outline: none;
+    width: 90%;
+   
+}
+
+.register  .login-signup .signup button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+
+.register .login-signup .signup .socials{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.register .login-signup .signup .socials .social-btn{
+  color: var(--primary);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.register .login-signup .signup .socials .social-btn:hover{
+    color: #000;
+}
+
+.register .login-signup .signup .socials a{
+    padding: 5px 10px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+}
+
+.register  .login-signup .signup span a{
+   color: var(--primary);
+   cursor: pointer;
+   font-size: 18px;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+
+
+
+
+/*error messages */
+.error-message {
+    color: #ff4d4d; /* Red for error */
+    background-color: #ffe6e6;
+    border: 1px solid #ff1a1a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .success-message {
+    color: #28a745; /* Green for success */
+    background-color: #e6ffe6;
+    border: 1px solid #1a7f1a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .proceed-btn {
+    background-color: #1a7f1a; /* Green for success */
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .proceed-btn:hover {
+    background-color: #145214;
+  }
+  
+  /* Button disabled state */
+  button[disabled] {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+
+@media (max-width: 600px) {
+    .register section{
+        display: none;
+    }
+
+    .register .login-signup{
+        width: 100%;
+    }
+
+}

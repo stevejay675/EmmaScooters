@@ -5,6 +5,7 @@ import './order.css'; // Import the global CSS file
 import TelegramChatWidget from '@/components/widget/TelegramChatWidget';
 import Newsletter from '@/components/newsletter/newsletter';
 import Footer from '@/components/footer/Footer';
+import ContactSection from '@/components/contact/contact';
 
 const Order = () => {
   return (
@@ -12,9 +13,11 @@ const Order = () => {
     <>
     <div className="order-container">
       <section className="order-section">
+        <ContactSection />
         <h1>How to Order</h1>
         <p>Ordering from EmmaGo is simple, safe, and reliable. Follow these easy steps:</p>
         <ul className="order-steps">
+          <li>fill the contact form with the product you want or</li>
           <li>1. Click on the floating message icon at the bottom right.</li>
           <li>2. Choose your preferred messaging platform (Telegram, Messenger, or Email).</li>
           <li>3. Message us with the product you want to order, along with your delivery details.</li>
