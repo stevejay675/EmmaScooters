@@ -51,7 +51,7 @@ const Navbar = () => {
             </div>
 
             <div className="right-ham">
-            <Link href="/products" className="pro">Products</Link>
+           
              <Link href='/Order' className="order-now">Order</Link>
               {/* User Icon with hover */}
               <div className="user-icon">
