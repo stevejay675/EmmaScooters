@@ -148,7 +148,6 @@ const BlogPage = () => {
           </div>
         </div>
       )}
-      <TelegramChatWidget />
       <Newsletter />
       <Footer />
      </div>

@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import './order.css'; // Import the global CSS file
-import TelegramChatWidget from '@/components/widget/TelegramChatWidget';
 import Newsletter from '@/components/newsletter/newsletter';
 import Footer from '@/components/footer/Footer';
 import ContactSection from '@/components/contact/contact';
@@ -47,7 +46,6 @@ const Order = () => {
           </div>
          
         </div>
-        <TelegramChatWidget />
       </section>
 
 
@@ -77,7 +75,6 @@ const Order = () => {
       
     </div>
 
-    <TelegramChatWidget />
       <Newsletter />
       <Footer />
     </>

@@ -13,6 +13,7 @@ import {
   signInWithPopup 
 } from "firebase/auth";
 import { auth, googleProvider } from "../../firebase/firebase";
+import TidioChat from "@/components/widget/Tidochat";
 
 // Function to map Firebase error codes to custom messages
 const getCustomErrorMessage = (errorCode) => {
@@ -251,6 +252,7 @@ export default function Login() {
           </div>
 
           <span>Already have an account? <a onClick={handleLoginDisplay}>Login</a></span>
+          <TidioChat />
         </div>
       </div>
     </div>
