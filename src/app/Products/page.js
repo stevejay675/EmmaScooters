@@ -6,7 +6,6 @@ import "aos/dist/aos.css";
 import "./shop.css";
 import Newsletter from "@/components/newsletter/newsletter";
 import Footer from "@/components/footer/Footer";
-import TelegramChatWidget from "@/components/widget/TelegramChatWidget";
 
 export  default  function ProductPage() {
   useEffect(() => {
@@ -83,7 +82,6 @@ export  default  function ProductPage() {
       </div>
 
     </section>
-    <TelegramChatWidget />
     <Newsletter />
       <Footer />
     </>
