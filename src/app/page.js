@@ -12,6 +12,7 @@ import Footer from "@/components/footer/Footer";
 import ContactSection from "@/components/contact/contact";
 import ImageGallery from "@/components/gallery/gallery";
 import FAQSection from "@/components/FAQ/FAQSection ";
+import TidioChat from "../components/widget/Tidochat";
 
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
       <FAQSection />
       <BannerSection />
       <Reviews />
-      <TelegramChatWidget />
+      <TidioChat />
       <ContactSection />
       <Newsletter />
       <Footer />

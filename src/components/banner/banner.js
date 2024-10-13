@@ -26,7 +26,7 @@ const Banner = () => {
           animate={{ x: 0 }}
           transition={{ type: "spring", stiffness: 50, duration: 1.2 }}
         >
-          Welcome to EmmaGo
+          Welcome to Emma Mobility Center
         </motion.h1>
 
         {/* Tagline */}
