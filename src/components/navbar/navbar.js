@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="navbar-container">
           {/* Logo */}
           <div className="navbar-logo">
-            <a href="#"><h1>EmmaGo</h1></a>
+            <a href="#"><h1>A&J Mobility</h1></a>
           </div>
 
           {/* Navbar Links for Desktop */}

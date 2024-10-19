@@ -4,7 +4,6 @@ import Banner from "@/components/banner/banner";
 import Services from "@/components/services/services";
 import Intro from "@/components/intro/intro";
 import AboutUs from "@/components/about/aboutus";
-import TelegramChatWidget from "@/components/widget/TelegramChatWidget";
 import Reviews from "@/components/reviews/reviews";
 import BannerSection from "@/components/otherBannner/otherBanner";
 import Newsletter from "@/components/newsletter/newsletter";
