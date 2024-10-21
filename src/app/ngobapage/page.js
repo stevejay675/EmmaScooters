@@ -37,13 +37,17 @@ const NgobaPage = () => {
   if (loading) return <p>Loading contacts...</p>;
   if (error) return <p>{error}</p>;
 
-  // Separate contacts into two categories and sort by timestamp
-  const kittyContacts = contacts
-    .filter(contact => contact.gender)
+  // Separate contacts into three categories
+  const steveContacts = contacts
+    .filter(contact => !contact.category && !contact.gender) // Steve Inquiries: No category and no gender
     .sort((a, b) => b.timestamp?.toDate() - a.timestamp?.toDate());
 
-  const scooterContacts = contacts
-    .filter(contact => !contact.gender)
+  const kittenContacts = contacts
+    .filter(contact => contact.gender) // Kitten Inquiries: Has a gender field
+    .sort((a, b) => b.timestamp?.toDate() - a.timestamp?.toDate());
+
+  const aAndJContacts = contacts
+    .filter(contact => contact.category) // A&J Inquiries: Has a product category field
     .sort((a, b) => b.timestamp?.toDate() - a.timestamp?.toDate());
 
   return (
@@ -51,17 +55,17 @@ const NgobaPage = () => {
       <div className="ngoba-container">
         <h2>Contacted People</h2>
 
-        {/* Scooter Contacts Section */}
+        {/* Steve Contacts Section */}
         <div className="contact-section">
           <h3>
-            Scooter Inquiries 
-            <span className="inquiry-count">{scooterContacts.length}</span>
+            Steve Inquiries
+            <span className="inquiry-count">{steveContacts.length}</span>
           </h3>
-          {scooterContacts.length === 0 ? (
-            <p>No scooter inquiries available.</p>
+          {steveContacts.length === 0 ? (
+            <p>No Steve inquiries available.</p>
           ) : (
             <ul className="contact-list">
-              {scooterContacts.map(contact => (
+              {steveContacts.map(contact => (
                 <li key={contact.id} className="contact-item">
                   <p><strong>Name:</strong> {contact.name}</p>
                   <p><strong>Email:</strong> {contact.email}</p>
@@ -74,23 +78,47 @@ const NgobaPage = () => {
           )}
         </div>
 
-        {/* Kitty Contacts Section */}
+        {/* Kitten Contacts Section */}
         <div className="contact-section">
           <h3>
-            Kitty Inquiries 
-            <span className="inquiry-count">{kittyContacts.length}</span>
+            Kitten Inquiries
+            <span className="inquiry-count">{kittenContacts.length}</span>
           </h3>
-          {kittyContacts.length === 0 ? (
-            <p>No kitty inquiries available.</p>
+          {kittenContacts.length === 0 ? (
+            <p>No kitten inquiries available.</p>
           ) : (
             <ul className="contact-list">
-              {kittyContacts.map(contact => (
+              {kittenContacts.map(contact => (
                 <li key={contact.id} className="contact-item">
                   <p><strong>Name:</strong> {contact.name}</p>
                   <p><strong>Email:</strong> {contact.email}</p>
                   <p><strong>Country:</strong> {contact.country}</p>
                   <p><strong>Message:</strong> {contact.message}</p>
                   <p><strong>Gender:</strong> {contact.gender}</p>
+                  <p><strong>Timestamp:</strong> {formatTimestamp(contact.timestamp?.toDate())}</p>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        {/* A&J Contacts Section */}
+        <div className="contact-section">
+          <h3>
+            A&J Inquiries
+            <span className="inquiry-count">{aAndJContacts.length}</span>
+          </h3>
+          {aAndJContacts.length === 0 ? (
+            <p>No A&J inquiries available.</p>
+          ) : (
+            <ul className="contact-list">
+              {aAndJContacts.map(contact => (
+                <li key={contact.id} className="contact-item">
+                  <p><strong>Name:</strong> {contact.name}</p>
+                  <p><strong>Email:</strong> {contact.email}</p>
+                  <p><strong>Country:</strong> {contact.country}</p>
+                  <p><strong>Message:</strong> {contact.message}</p>
+                  <p><strong>Category:</strong> {contact.category}</p>
                   <p><strong>Timestamp:</strong> {formatTimestamp(contact.timestamp?.toDate())}</p>
                 </li>
               ))}

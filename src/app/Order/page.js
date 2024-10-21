@@ -29,11 +29,7 @@ const Order = () => {
       <section className="order-section">
         <h2>Our Categories</h2>
         <div className="product-grid">
-          <div className="product">
-            <Image src="/images/parts.jpg" alt="Scooter 1" width={200} height={150} />
-            <h3>Spare Parts</h3>
-            <p>We offer a wide range of spare parts for all types of mobility scooters and electric wheelchairs. Whether you need batteries, tires, motors, or any other replacement part, we have you covered with high-quality, reliable parts to keep your equipment running smoothly. Our spare parts are sourced from trusted manufacturers to ensure longevity and performance, providing the best support for your mobility needs.</p>
-          </div>
+          
           <div className="product">
             <Image src="/images/scooters.jpg" alt="Scooter 2" width={200} height={150} />
             <h3>Mobility Scooters</h3>
@@ -44,7 +40,11 @@ const Order = () => {
             <h3>Electric Wheelchairs</h3>
             <p>At EmmaGo, we provide a wide selection of electric and manual wheelchairs, offering enhanced mobility for individuals with varying needs. Our wheelchairs are ergonomically designed for maximum comfort and durability, ensuring users can move freely and confidently. From lightweight, portable options to advanced models with cutting-edge technology, we have the perfect wheelchair to fit your mobility requirements.</p>
           </div>
-         
+          <div className="product">
+            <Image src="/images/parts.jpg" alt="Scooter 1" width={200} height={150} />
+            <h3>Spare Parts</h3>
+            <p>We offer a wide range of spare parts for all types of mobility scooters and electric wheelchairs. Whether you need batteries, tires, motors, or any other replacement part, we have you covered with high-quality, reliable parts to keep your equipment running smoothly. Our spare parts are sourced from trusted manufacturers to ensure longevity and performance, providing the best support for your mobility needs.</p>
+          </div>
         </div>
       </section>
 
